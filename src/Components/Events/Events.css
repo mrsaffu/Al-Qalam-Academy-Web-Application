@@ -1,0 +1,29 @@
+.eventsMainCont {
+  /* border: 2px solid yellow; */
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vmax; */
+  padding-bottom: 20px;
+}
+
+.eventsMainCont p{
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10PX;
+  
+
+}
+.eventsCard{
+  /* border: 2px solid red; */
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15pxpx;
+}
+

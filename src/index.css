@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Outfit", serif;
+}
+
+body {
+  background: #f5f5f5;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: default;
+}
+
+.container{
+  /* border: 2px solid red; */
+  padding-left: 10%;
+  padding-right: 10%;
+  /* margin-bottom: 30px; */
+}
+.btn{
+  background: #fff;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn img{
+  width: 20px;
+  margin-left: 10px;
+}
+a.active{
+  color: red !important;
+  /* color: #ffb400; */
+  
+ /* background-color:yellowgreen; */
+ }
+
+
+
+
+ /* Responsive Styles for All Devices */
+
+@media screen and (max-width: 1200px) {
+  .container, .gCont, .program, .title {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .card, .card1, .hulkCards, .eventsCard, .testiCont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card img, .card1 img, .hulkCards img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn, .navBtn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .contactCont, .hHeadContent, .pHeadContent, .cHeadContent, .aHeadContent, .logoCont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text h1, .top h1 {
+    font-size: 40px;
+  }
+  .eventsCard, .gallery img, .slider ul, .program {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testiCont {
+    padding: 0 40px;
+  }
+  .title h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container, .gCont, .program, .title {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .hero, .hulkMainCont {
+    min-height: 50vh;
+  }
+  .btn, .navBtn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+  .cardContent h1, .cardContent1 h1, .hHeadContent h5, .pHeadContent h5, .cHeadContent h4, .aHeadContent h4 {
+    font-size: 20px;
+  }
+  .title h2 {
+    font-size: 24px;
+  }
+  .testiCont {
+    padding: 0 20px;
+  }
+}

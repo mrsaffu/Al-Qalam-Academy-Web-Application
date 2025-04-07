@@ -1,0 +1,70 @@
+.testiCont {
+  margin: 80px auto;
+  padding: 0 80px;
+  position: sticky;
+  
+  /* gap: 10px; */
+}
+.nextBtn,
+.backBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 15px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212ea0;
+}
+.backBtn {
+  right: auto;
+  left: 0;
+}
+
+.slider {
+  overflow: hidden;
+  
+}
+.slider ul {
+  /* border: 2px solid yellow; */
+  display: flex;
+  width: 200%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* transform: translateX(-33); */
+}
+.slider ul li {
+    /* border: 2px solid black; */
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+.slide {
+  /* border: 2px solid red; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  border-radius: 10px;
+  color: #676767;
+  line-height: 1.4;
+  /* width: 100%; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+.slide img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid #212ea0;
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.userInfo h3 {
+  color: #212ea0;
+}

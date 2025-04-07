@@ -1,0 +1,99 @@
+.Card2MainCont {
+  /* border: 2px solid red; */
+  flex-basis: 32%;
+  position: sticky;
+  /* overflow: hidden; */
+  width: 410px;
+  height: 300px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.Card2MainCont img {
+  width: 100%;
+  height: inherit;
+
+  border-radius: 10px;
+  display: block;
+  /* margin: 20px; */
+}
+
+.cardLogo {
+  border-radius: 10px;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background: rgba(34, 34, 35, 0.567); */
+  background: rgba(54, 54, 55, 0.567);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  color: #fff;
+  /* opacity: 0; */
+  padding: 35px;
+  /* transition: 1s ease-in-out; */
+  cursor: pointer;
+  pointer-events: none;
+  transition: 1.5s ease-in-out;
+}
+.Card2MainCont:hover .cardLogo {
+  justify-content: start;
+  background: var(--hover-color);
+  pointer-events: auto;
+  /* background: #9a7e0ce7; */
+}
+.Card2MainCont:hover .cardParaGraph {
+  opacity: 0; /* Hide when the card container is hovered */
+}
+.cardLogo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.CardLogo h2 {
+  font-size: 30px;
+}
+.cardParaGraph {
+  /* border: 2px solid red; */
+  /* color: red; */
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background: rgba(34, 34, 35, 0.567); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transform: translateY(100%);
+  display: inline-block;
+}
+.Card2MainCont:hover .cardParaGraph {
+  transform: translateY(0);
+  /* background: rgba(0, 0, 255, 0.137); */
+  border-radius: 9px;
+
+  opacity: 1;
+  pointer-events: auto;
+}
+.cardParaGraph h4 {
+  width: 150;
+  line-height: 1.2;
+  font: 15px;
+  padding-top: 142px;
+  color: #fff;
+}
+.cardParaGraph p {
+  font-size: 15px;
+  padding-top: 5px;
+}

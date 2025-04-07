@@ -1,0 +1,58 @@
+.hulkMainCont {
+  /* border: 2px solid red; */
+  width: inherit;
+  /* padding: 20px; */
+}
+.top {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 30px;
+}
+.top img {
+  width: 85px;
+}
+.top h1 {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 20px;
+}
+.greetHulk {
+  color: green;
+  margin-top: 40px;
+
+  text-align: center;
+}
+
+.hHeadContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
+}
+.hHeadContent h5 {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: none;
+  margin-top: 10px;
+}
+
+.hulkCards {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  /* display: block; */
+
+  margin-top: 50px;
+  width: 95%;
+}
