@@ -13,7 +13,7 @@ import Gallery from "./Components/Gallery/Gallery.jsx";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename="Al-Qalam-Academy-Web-Application">
         <NavBar />
 
         <Routes>

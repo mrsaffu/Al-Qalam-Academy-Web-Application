@@ -7,18 +7,19 @@ const Programs = () => {
   return (
     <div className="container  ourProgram">
       <Title subTitle="Our Program" title="What we Offer" />
-     <div className="pHeadContent">
-     <h4>
-        At Bright Star Schools, our mission is to provide holistic, inclusive
-        support for all students to achieve academic excellence and grow their
-        unique talents so that they find joy and fulfillment in higher
-        education, career, and life.
-      </h4>
-      <h5>
-        Here, we have high expectations for all of our students. We believe that
-        every student is capable of succeeding in every subject area.
-      </h5>
-     </div>
+      <div className="pHeadContent">
+        <h4>
+          hello
+          At Bright Star Schools, our mission is to provide holistic, inclusive
+          support for all students to achieve academic excellence and grow their
+          unique talents so that they find joy and fulfillment in higher
+          education, career, and life.
+        </h4>
+        <h5>
+          Here, we have high expectations for all of our students. We believe
+          that every student is capable of succeeding in every subject area.
+        </h5>
+      </div>
       <Card
         img="https://www.alqalamdbg.in/wp-content/uploads/2020/04/DSC_0145.jpg"
         head="Core Instructional Program"
