@@ -1,0 +1,233 @@
+ /* Academics.css */ 
+
+.academics-section {
+  padding:10rem 0;
+  background-color: #f9f9f9;
+}
+
+.academics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.academics-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.academics-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .academics-title {
+    font-size: 3rem;
+  }
+}
+
+.academics-title-highlight {
+  color: #008080;
+}
+
+.academics-subtitle {
+  max-width: 48rem;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.tabs-container {
+  margin-bottom: 2rem;
+}
+
+.tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.tab-button:hover {
+  color: #008080;
+}
+
+.tab-button.active {
+  color: #008080;
+  border-bottom: 2px solid #008080;
+}
+
+.tab-content {
+  min-height: 300px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.tab-pane-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.tab-pane-text {
+  color: #666;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Wing Layout Styles */
+.wing-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .wing-layout {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+}
+
+.wing-content {
+  text-align: left;
+}
+
+.wing-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .wing-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wing-feature-group {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wing-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #008080;
+  margin-bottom: 0.75rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.wing-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #4b5563;
+}
+
+.wing-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.wing-highlight {
+  background-color: #e6f7f7;
+  border-left: 4px solid #008080;
+  padding: 1.25rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 1.5rem 0;
+}
+
+.wing-highlight-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #008080;
+  margin-bottom: 0.5rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.wing-highlight p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.wing-image-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.wing-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.wing-badge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.primary-badge {
+  background-color: #4f46e5;
+}
+
+.middle-badge {
+  background-color: #0891b2;
+}
+
+.senior-badge {
+  background-color: #059669;
+}
+
+.islamic-badge {
+  background-color: #8b5cf6;
+}
+.pHeadContent h5 {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: none;
+  margin-top: 10px;
+}

@@ -1,0 +1,129 @@
+.tab-pane {
+    padding: 1.5rem 0;
+  }
+  
+  .curriculum-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 992px) {
+    .curriculum-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .curriculum-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+  }
+  
+  .curriculum-text {
+    margin-bottom: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  .features-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+  }
+  
+  .features-list {
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-icon {
+    color: #008080;
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  .feature-text {
+    color: #4b5563;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .curriculum-image {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .image-badge {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    background-color: #f8b400;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .badge-text {
+    color: white;
+    font-weight: 700;
+    font-family: var(--font-heading);
+  }
+  
+  .subjects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .subjects-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .subject-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subject-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #008080;
+    font-family: var(--font-heading);
+  }
+  
+  .subject-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subject-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subject-icon {
+    color: #6b7280;
+    margin-right: 0.5rem;
+  }

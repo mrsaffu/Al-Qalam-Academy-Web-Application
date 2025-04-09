@@ -1,0 +1,84 @@
+/* ===== Testimonials Section ===== */
+.testimonials-section {
+  padding: 4rem 0;
+  background-color:white;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+@media (min-width: 768px) {
+  .testimonials-title {
+    font-size: 2.5rem;
+  }
+}
+
+.testimonials-title-highlight {
+  color: #008080;
+}
+
+.testimonials-subtitle {
+  max-width: 40rem;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* ===== Testimonials Grid ===== */
+.testimonials-grid {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Read More Link ===== */
+.testimonials-mores {
+  /* border: 2px solid red; */
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.testimonials-more-links {
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  color: #008080;
+  font-weight: 600;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  gap: 10px;
+
+}
+
+.testimonials-more-link:hover {
+  color: #006666;
+}
+.testimonials-more-link svg {
+  margin-left: 0.5rem;
+}
+ 
+ /* -------testimonial cards  --------- */
