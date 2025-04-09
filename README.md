@@ -1,44 +1,102 @@
-# 🏫 Al-Qalam Academy Web Application
 
-**Al-Qalam Academy Web Application** is a feature-rich, responsive school management platform developed using **React.js**. It aims to bridge the gap between institutions, students, teachers, and parents by offering a digital gateway to access academic resources, information, and essential tools with ease.
+# Al Qalam Academy Website
 
----
+A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational institution that combines academic excellence with Islamic values.
 
-## 🌟 Project Highlights
+## Features
 
-🎯 **Purpose:**  
-To create a modern, functional, and user-friendly web application for schools, enabling smooth communication, information sharing, and academic updates through a centralized platform.
+- **Modern UI/UX**: Built with React and JavaScript for a responsive, user-friendly experience
+- **Component-Based Architecture**: Organized structure with reusable components
+- **Rich Content Management**: Handles various types of content including galleries, testimonials, and events
+- **Interactive Elements**: Dynamic navigation, animations, and user interactions
 
-🛠 **Built With:**  
-React.js • HTML5 • CSS3 • React Router DOM  
-*(Optional additions: Tailwind CSS, Node.js, MongoDB for full-stack expansion)*
+## Tech Stack
 
----
+- React + JSX
+- Vite
+- CSS
+- Framer Motion
+- React-Router-Dom (for routing)
+- UI Components
 
-## 🚀 Key Features
+## Key Sections
 
-- ⚛️ **React Component Architecture**  
-  Built with reusable components using `props` and `state` for dynamic rendering.
+1. **Home Page**
+   - Hero Section
+   - Hulk Section
+   - About
+   - School Activities
+   - News & Events
+   - Testimonials
+   - Gallery
 
-- 🧭 **SPA Routing**  
-  Smooth page navigation using `react-router-dom` without reloading the page.
 
-- 🎨 **Modern and Clean UI**  
-  Visually appealing design tailored for both students and school staff.
+2. **Academic Information**
+   - Curriculum Details
+   - Academic Programs
+   - Islamic Studies Integration
 
-- 🔄 **State Management**  
-  Seamless interactivity and dynamic content through controlled components.
+3. **School Life**
+   - Photo Gallery
+   - Student Activities
+   - Sports Facilities
+   - Campus Tour
 
-- 🖥️ **Fully Responsive Layout**  
-  Optimized for desktops, tablets, and smartphones.
+4. **Administrative**
+   - Admissions Process
+   - Faculty Profiles
+   - Contact Information
+   - About Us
 
-- 🧠 **Scalable Structure**  
-  Organized file system and modular codebase for easy feature expansion.
+## Project Structure
 
-- 🔧 **Future-Ready**  
-  Backend integration-ready (Node.js, Express.js, MongoDB planned for Phase 2).
+```
+├── client/
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/        # Page components
+│   │   ├── lib/          # Utilities and data
+│   │   └── hooks/        # Custom React hooks
+├── server/               # Backend server files
+├── shared/              # Shared types and schemas
+└── public/              # Static assets
+```
 
----
+## Getting Started
 
-## 📂 Folder Structure
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
+## Features Overview
+
+- **Responsive Design**: Mobile-first approach
+- **Interactive UI**: Smooth animations and transitions
+- **Content Management**: Easy-to-update content structure
+- **Performance Optimized**: Fast loading and rendering
+- **SEO Friendly**: Proper meta tags and structure
+
+## Contact Information
+
+Al Qalam Academy
+- Phone: +91 98765 43210
+- Email: info@alqalamacademy.edu
+- Hours: Mon-Fri: 8:00 AM - 4:00 PM, Sat: 9:00 AM - 1:00 PM
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License.
