@@ -1,7 +1,8 @@
-
-# Al Qalam Academy Website
+# [ Al Qalam Academy Website](https://mrsaffu.github.io/Al-Qalam-Academy-Web-Application/)
 
 A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational institution that combines academic excellence with Islamic values.
+
+🔗 **Live Website:** [Al Qalam Academy Website](https://mrsaffu.github.io/Al-Qalam-Academy-Web-Application/)
 
 ## Features
 
@@ -22,6 +23,7 @@ A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational inst
 ## Key Sections
 
 1. **Home Page**
+
    - Hero Section
    - Hulk Section
    - About
@@ -30,13 +32,14 @@ A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational inst
    - Testimonials
    - Gallery
 
-
 2. **Academic Information**
+
    - Curriculum Details
    - Academic Programs
    - Islamic Studies Integration
 
 3. **School Life**
+
    - Photo Gallery
    - Student Activities
    - Sports Facilities
@@ -85,6 +88,7 @@ A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational inst
 ## Contact Information
 
 Al Qalam Academy
+
 - Phone: +91 98765 43210
 - Email: info@alqalamacademy.edu
 - Hours: Mon-Fri: 8:00 AM - 4:00 PM, Sat: 9:00 AM - 1:00 PM
