@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 const Contact = () => {
   useEffect(() => {
-    document.title = 'Contact Us - Al Qalam Academy';
+    document.title = 'Al Qalam Academy';
   }, []);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
