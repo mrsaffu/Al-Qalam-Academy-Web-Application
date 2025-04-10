@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   useEffect(() => {
-    document.title = 'AboutUs Us - Al Qalam Academy';
+    document.title = 'About Us - Al Qalam Academy';
   }, []);
 
   return (

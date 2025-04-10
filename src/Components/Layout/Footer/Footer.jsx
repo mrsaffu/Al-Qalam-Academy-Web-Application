@@ -166,8 +166,7 @@ const Footer = () => {
 
         <div className="footer-copyright">
           <p>
-            &copy; {new Date().getFullYear()} Al Qalam Academy. All Rights
-            Reserved. CBSE Affiliated School.
+            &copy; {new Date().getFullYear()} Al-Qalam Academy | Created by <a href="https://mrsaffu.github.io/Business-CV-Application/" target="_blank"  className="text-blue-500 underline">Mr Safwan Ahmad</a>
           </p>
         </div>
       </div>

@@ -12,6 +12,9 @@ import Contact from "../ContactUs/Contact.jsx";
 
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Al Qalam Academy';
+  }, []);
   return (
     <div>
       <Hero />
