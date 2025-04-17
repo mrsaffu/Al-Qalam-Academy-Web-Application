@@ -135,7 +135,7 @@ const NavBar = () => {
             </li>
             <li className="mobile-nav-item">
               <NavLink
-                to="/contact"
+                to="/contactUs"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
