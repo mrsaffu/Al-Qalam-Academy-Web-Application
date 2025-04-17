@@ -6,17 +6,20 @@ import { ArrowRight, Medal, Heart, Lightbulb, X, Contact } from "lucide-react";
 import "./AboutHome.css"
 
 const AboutHome = () => {
+  const navigate = useNavigate();
 
     useEffect(() => {
-        document.title = "Al Qalam Academy - CBSE Board School";
-      }, []);
+        // document.title = "Al Qalam Academy - CBSE Board School";
     
-      const navigate = useNavigate();
+      },[]);
+
       const navigateToAbout = () => {
         console.log("navigate sucess fully");
     
         navigate("/aboutus");
-      };
+      }
+    
+
     
   return (
     <section className="about-section">

@@ -16,6 +16,7 @@ import { NavLink } from 'react-router-dom';
 const Events= () => {
   useEffect(() => {
     document.title = 'School Activities - Al Qalam Academy';
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   const [activeCategory, setActiveCategory] = useState('sports');

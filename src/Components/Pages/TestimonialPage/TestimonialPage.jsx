@@ -7,6 +7,7 @@ import './TestimonialPage.css';
 const TestimonialPage = () => {
   useEffect(() => {
     document.title = 'Testimonials - Al Qalam Academy';
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
@@ -15,7 +16,7 @@ const TestimonialPage = () => {
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.9 }}
           className="testimonials-page-title"
         >
           What Our <span className="testimonials-page-title-highlight">Community Says</span>

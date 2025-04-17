@@ -19,6 +19,7 @@ const App = () => {
   return (
     <>
       <Router basename="Al-Qalam-Academy-Web-Application">
+      {/* <Router > */}
         <NavBar />
 
         <Routes>

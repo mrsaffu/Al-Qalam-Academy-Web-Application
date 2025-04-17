@@ -1,5 +1,6 @@
 {
   "homepage": "https://mrsaffu.github.io/Al-Qalam-Academy-Web-Application",
+
   "name": "alqalamacademy",
   "private": false,
   "version": "0.0.0",
@@ -9,7 +10,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {

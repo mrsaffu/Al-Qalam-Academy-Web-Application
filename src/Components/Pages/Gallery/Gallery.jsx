@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom';
 const Gallery = () => {
   useEffect(() => {
     document.title = 'Gallery - Al Qalam Academy';
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   const [selectedImage, setSelectedImage] = useState(null);

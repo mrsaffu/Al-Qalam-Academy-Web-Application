@@ -6,6 +6,7 @@ import "./Academics.css";
 const Academics = () => {
   useEffect(() => {
     document.title = "Academics - Al Qalam Academy";
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   const [activeTab, setActiveTab] = useState("curriculum");

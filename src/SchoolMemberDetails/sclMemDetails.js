@@ -1,3 +1,7 @@
+import saffu from "../assets/safwan pasp.jpg"
+import ariba from "../assets/ariba.jpg"
+import aarif from "../assets/aarif.jpeg"
+import sameer from "../assets/sameer.png"
 // Faculty Members
 export const facultyMembers = [
     {
@@ -202,31 +206,31 @@ export const schoolActivities = [
   export const testimonials = [
     {
       id: 1,
-      name: 'Ahmed Patel',
-      role: 'Parent of Class 5 Student',
-      image: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80',
-      quote: 'Al Qalam Academy has been an excellent choice for our daughter. The balance between academic excellence and Islamic values is exactly what we were looking for. The teachers are dedicated and the administration is always responsive.'
+      name: 'Safwan Ahmad',
+      role: 'Alumni, Batch of 2017',
+      image: `${saffu}`,
+      quote: 'Al-Qalam Academy was the foundation of my academic and personal growth. The dedicated teachers, disciplined environment, and strong moral guidance shaped my character and future. Completing my 10th in 2017, I carry the values and knowledge gained here with pride. Forever grateful for this nurturing and inspiring institution.'
     },
     {
       id: 2,
-      name: 'Saira Rahman',
-      role: 'Parent of Class 8 Student',
-      image: 'https://images.unsplash.com/photo-1629747387925-6905ff5a558a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80',
-      quote: 'The holistic development approach at Al Qalam is impressive. My son has not only improved academically but has also developed good character and values. The extracurricular activities and sports facilities are excellent.'
+      name: 'Ariba Riya Karami',
+      role: 'Alumni, Batch of 2017',
+      image: `${ariba}`,
+      quote: 'Al-Qalam Academy was more than a school—it was a place where dreams were nurtured and values were instilled. The supportive teachers and enriching atmosphere helped me grow with confidence and clarity. Graduating in 2017, I remain thankful for the lifelong lessons and positive impact it left on my journey.'
     },
     {
       id: 3,
-      name: 'Zainab Khan',
-      role: 'Class 10 Student',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
-      quote: 'Being a student at Al Qalam has been transformative. The teachers here don\'t just teach subjects, they mentor us for life. I\'ve grown so much both academically and personally.'
+      name: 'Md Aarif',
+      role: 'Alumni, Batch of 2017',
+      image: `${aarif}`,
+      quote: 'The guidance, discipline, and encouragement I received during my school years shaped both my character and ambitions. In 2017, I completed my 10th standard with pride. It was at Al-Qalam Academy where I found the foundation for lifelong learning, and I remain deeply grateful for that transformative experience..'
     },
     {
       id: 4,
-      name: 'Mohammed Siddiqui',
-      role: 'Parent of Class 3 Student',
-      image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=687',
-      quote: 'The individual attention given to each student is remarkable. The teachers understand my child\'s learning style and adapt their teaching methods accordingly.'
+      name: 'Saad Muhammad Sameer',
+      role: 'Alumni, Batch of 2017',
+      image: `${sameer}`,
+      quote: 'My time in school was marked by invaluable lessons, both academic and personal. The nurturing environment and dedicated educators inspired me to always strive for excellence. Completing my 10th in 2017, I owe much of my growth to Al-Qalam Academy, a place that continues to influence my path in life.'
     },
     {
       id: 5,

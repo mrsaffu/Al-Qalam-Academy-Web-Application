@@ -80,86 +80,86 @@ const NavBar = () => {
         <nav>
           <ul className="mobile-nav-list">
             <li className="mobile-nav-item">
-              <Link
-                href="/"
+              <NavLink
+                to="/"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/about"
+              <NavLink
+                to="/aboutUs"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/academics"
+              <NavLink
+                to="/academics"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Academics
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/faculty"
+              <NavLink
+                to="/faculty"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Faculty
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/admissions"
+              <NavLink
+                to="/admissions"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Admissions
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/gallery"
+              <NavLink
+                to="/gallery"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Gallery
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/contact"
+              <NavLink
+                to="/contact"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link
-                href="/activities"
+              <NavLink
+                to="/activities"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Activities
-              </Link>
+              </NavLink>
             </li>
             <li className="mobile-nav-item">
-              <Link href="/admissions">
+              <NavLink to="/admissions">
                 <button
                   className="mobile-apply-button"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Apply Now
                 </button>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

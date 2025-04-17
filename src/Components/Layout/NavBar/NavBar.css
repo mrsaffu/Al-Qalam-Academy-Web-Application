@@ -88,13 +88,13 @@
   text-decoration: none;
   color: white;
 }
-.nav-list a:hover{
+.nav-list a:hover {
   color: #f8b400;
 }
 
 .apply-button {
   background-color: #f8b400;
-  color:rgba(0, 0, 0, 0.674);
+  color: rgba(0, 0, 0, 0.674);
   font-weight: 500;
   border: none;
   border-radius: 0.25rem;
@@ -105,19 +105,20 @@
 
 .apply-button:hover {
   background-color: #e6aa0599;
-
 }
 
-/* Mobile Menu */
+/* ----------------------- Mobile Menu ----------------------- */
 .menu-toggle {
+  border: 2px solid red;
   background: none;
   border: none;
-  color: #333;
+  color: rgb(14, 13, 13);
   cursor: pointer;
   padding: 0.5rem;
 }
 
 .mobile-menu {
+  /* border: 2px solid red; */
   background-color: white;
   padding: 0 1rem 1rem;
   transition: all 0.3s ease;
@@ -128,6 +129,8 @@
 }
 
 .mobile-nav-list {
+  /* border: 2px solid red; */
+
   list-style: none;
   padding: 0;
   margin: 0;
@@ -142,17 +145,20 @@
   padding: 0.5rem 0;
   color: #333;
   font-weight: 500;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .mobile-nav-link:hover {
-  color: var(--primary);
+  color: #f8b400;
+  
+
 }
 
 .mobile-apply-button {
   width: 100%;
-  background-color: var(--secondary);
-  color: white;
+  background-color: #f8b400;
+  color:black;
   font-weight: 500;
   border: none;
   border-radius: 0.25rem;
@@ -162,7 +168,8 @@
 }
 
 .mobile-apply-button:hover {
-  background-color: var(--secondary-dark);
+  background-color: #e6aa0599;
+  
 }
 
 @media (min-width: 768px) {

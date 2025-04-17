@@ -1,5 +1,7 @@
 // import React, { useRef } from "react";
 import "./Hulk.css";
+import { motion } from "framer-motion";
+
 import Title from "../../Title/Title.jsx";
 import HulkCard from "../../Cards/HulkCard/HulkCard.jsx";
 import imgLogo1 from "../../../assets/imgLogo1.svg";
@@ -20,13 +22,20 @@ const Hulk = () => {
         </div>
 
         <Title title="Your Future is Bright!" className="hulkTitle"></Title>
+
+        
         <div className="hHeadContent">
-          <h5>
+          <motion.h5
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
             In Bright Star’s free, public, and joyful schools, we provide
             students with strong academics, holistic and inclusive support, and
             rich life opportunities beyond the classroom so they thrive in
             kindergarten through 12th grade … and far beyond!
-          </h5>
+          </motion.h5>
 
           <div className="hulkCards">
             <HulkCard
@@ -37,6 +46,7 @@ const Hulk = () => {
               paragraph="Form their first day at a Bright Star School, br our students are
           prepared for success"
             />
+
             <HulkCard
               hcolor="rgba(255, 0, 0, 0.83)"
               img="https://media.istockphoto.com/id/504874996/photo/teaching-a-lesson-in-homeschool.jpg?s=2048x2048&w=is&k=20&c=2Us5v4NJ2VoianT2vsb2HpavlbyAYsECQiFD4wxJdXU="

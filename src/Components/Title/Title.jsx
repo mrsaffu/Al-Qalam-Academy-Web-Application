@@ -1,14 +1,29 @@
-import React from 'react';
-import "./title.css"
+import React from "react";
+import "./title.css";
+import { motion } from "framer-motion";
 
-const Title = ( {subTitle, title}) => {
+
+const Title = ({ subTitle, title }) => {
   return (
-    <div className='title'>
-        <p>{subTitle}</p>
-        <h2>{title}</h2>
+    <motion.div initial={{ opacity: 0, x: -30 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.5 }}
+    viewport={{ once: true }} className="title">
       
-    </div>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        {subTitle}
+      </motion.p>
+      <motion.h2       initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}>{title}</motion.h2>
+    </motion.div>
   );
-}
+};
 
 export default Title;

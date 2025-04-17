@@ -14,7 +14,8 @@ import Contact from "../ContactUs/Contact.jsx";
 const Home = () => {
   useEffect(() => {
     document.title = 'Al Qalam Academy';
-  }, []);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  },[]);
   return (
     <div>
       <Hero />

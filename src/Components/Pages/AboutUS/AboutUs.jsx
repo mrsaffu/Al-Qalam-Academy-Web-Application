@@ -18,6 +18,7 @@ import { Link } from 'react-router-dom';
 const AboutUs = () => {
   useEffect(() => {
     document.title = 'About Us - Al Qalam Academy';
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (

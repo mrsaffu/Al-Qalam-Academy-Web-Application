@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 const Contact = () => {
   useEffect(() => {
     document.title = 'Contact Us - Al Qalam Academy';
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -20,14 +21,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
+    <div  className="contact-page">
       <section className="contact-hero">
         <div className="contact-container">
           <div className="text-center">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1 }}
               className="hero-title"
             >
               Contact <span>Us</span>
@@ -225,11 +226,12 @@ const Contact = () => {
           >
             <div className="map-frame">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5400134005!2d77.0428299869856!3d28.527252739901082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1620282411807!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d638.598436958236!2d85.88648098566546!3d26.137623997769307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb9b2600eda05%3A0x1660d1617a382f34!2sAl%20Qalam%20Academy!5e0!3m2!1sen!2sin!4v1744805178557!5m2!1sen!2sin" 
                 allowFullScreen={false} 
                 loading="lazy"
                 title="Google Maps"
               ></iframe>
+           
             </div>
           </motion.div>
         </div>
@@ -268,7 +270,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
-  );
+  )
 };
 
 export default Contact;

@@ -40,6 +40,7 @@ const AccordionItem = ({ title, children, isOpen, toggle }) => {
 const Admissions = () => {
   useEffect(() => {
     document.title = 'Admissions - Al Qalam Academy';
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
 //   const [openItem, setOpenItem] = useState<string| null>('ageRequirements');

@@ -39,6 +39,7 @@ const Faculty = () => {
   
     useEffect(() => {
       document.title = 'Faculty - Al Qalam Academy';
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }, []);
   
     const openFacultyModal = (faculty) => {
