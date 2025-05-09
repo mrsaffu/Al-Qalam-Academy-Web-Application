@@ -89,9 +89,8 @@ A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational inst
 
 Al Qalam Academy
 
-- Phone: +91 98765 43210
-- Email: info@alqalamacademy.edu
-- Hours: Mon-Fri: 8:00 AM - 4:00 PM, Sat: 9:00 AM - 1:00 PM
+- Phone: +91 9546 9480 75
+- Email: safwansayyed78@gmail.com
 
 ## Contributing
 
