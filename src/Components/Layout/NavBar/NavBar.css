@@ -1,9 +1,10 @@
 .header {
   background-color: purple;
   position: fixed;
+  top: 0;
   width: 100%;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   transition: all 0.3s ease;
   /* padding: 15px; */
   padding: 0 20px 0 20px;
@@ -25,12 +26,12 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
+/* .header-container {
   width: 90%;
   max-width: 1510px;
   margin: 0 auto;
   padding: 0 1rem;
-}
+} */
 
 .header-content {
   display: flex;
@@ -59,7 +60,7 @@
 .logo-icon > img {
   /* border: 2px solid red; */
   /* height: 70px; */
-  height: 5.5rem;
+  height: 5rem;
   padding: 8px;
 }
 
@@ -109,10 +110,10 @@
 
 /* ----------------------- Mobile Menu ----------------------- */
 .menu-toggle {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background: none;
   border: none;
-  color: rgb(14, 13, 13);
+  color: white;
   cursor: pointer;
   padding: 0.5rem;
 }
@@ -120,8 +121,10 @@
 .mobile-menu {
   /* border: 2px solid red; */
   background-color: white;
-  padding: 0 1rem 1rem;
+  padding:  1rem 1rem;
+  margin: 1rem 1rem 1rem 0;
   transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
 .mobile-menu.hidden {
@@ -151,14 +154,12 @@
 
 .mobile-nav-link:hover {
   color: #f8b400;
-  
-
 }
 
 .mobile-apply-button {
   width: 100%;
   background-color: #f8b400;
-  color:black;
+  color: black;
   font-weight: 500;
   border: none;
   border-radius: 0.25rem;
@@ -169,10 +170,15 @@
 
 .mobile-apply-button:hover {
   background-color: #e6aa0599;
-  
 }
 
 @media (min-width: 768px) {
+  .header-container {
+    width: 90%;
+    max-width: 1510px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
   .desktop-menu {
     display: flex;
     align-items: center;

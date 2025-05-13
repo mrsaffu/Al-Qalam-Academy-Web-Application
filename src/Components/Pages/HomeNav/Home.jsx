@@ -17,7 +17,7 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   },[]);
   return (
-    <div>
+    <div className="homSec">
       <Hero />
       <Hulk />
       <AboutHome />

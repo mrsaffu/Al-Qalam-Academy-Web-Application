@@ -56,3 +56,72 @@
   margin-top: 50px;
   width: 95%;
 }
+
+
+/* Default styles are preserved as-is */
+
+/* Mobile phones (portrait and smaller) */
+@media (max-width: 480px) {
+  .top {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+
+  .top h1 {
+    font-size: 30px;
+  }
+
+  .top img {
+    width: 60px;
+  }
+
+  .hHeadContent {
+    width: 95%;
+  }
+
+  .hHeadContent h5 {
+    font-size: 16px;
+  }
+
+  .hulkCards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablets (iPad and similar) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    margin: 25px;
+  }
+
+  .top h1 {
+    font-size: 40px;
+  }
+
+  .top img {
+    width: 70px;
+  }
+
+  .hHeadContent {
+    width: 95%;
+  }
+
+  .hHeadContent h5 {
+    font-size: 18px;
+  }
+
+  .hulkCards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small laptops or landscape tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hulkCards {
+    justify-content: center;
+    gap: 20px;
+  }
+}
