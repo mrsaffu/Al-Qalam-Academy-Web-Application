@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"
+import "./App.css";
 import NavBar from "./Components/Layout/NavBar/NavBar.jsx";
 import Home from "./Components/Pages/HomeNav/Home.jsx";
 
@@ -19,8 +19,8 @@ import TestimonialPage from "./Components/Pages/TestimonialPage/TestimonialPage.
 const App = () => {
   return (
     <div className="appStyle">
-      <Router basename="Al-Qalam-Academy-Web-Application">
-      {/* <Router > */}
+      <Router>
+        {/* <Router > */}
         <NavBar />
 
         <Routes>
