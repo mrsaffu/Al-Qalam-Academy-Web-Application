@@ -97,7 +97,7 @@ This project is deployed on Vercel.
 
 Al Qalam Academy
 
-- Phone: +91 98765 43210
+
 - Email: info@alqalamacademy.edu
 - Hours: Mon-Fri: 8:00 AM - 4:00 PM, Sat: 9:00 AM - 1:00 PM
 
