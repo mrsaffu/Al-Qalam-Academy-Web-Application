@@ -61,6 +61,7 @@ const AddFaculty = () => {
       );
       console.log(formData);
 
+      // ! faculty details
       let response = await axios.post(
         "https://alqalam-academy-bakend.onrender.com/api/faculty/addfaculty",
         formData
