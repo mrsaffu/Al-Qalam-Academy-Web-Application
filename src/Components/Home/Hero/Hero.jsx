@@ -32,11 +32,11 @@ const HeroSection = () => {
           className="Hero-description"
         >
           
-          <p className="Hhdescription">
+          <span className="Hhdescription">
             {" "}
             Nurturing young minds with quality education and moral values at the
             leading CBSE board school
-          </p>
+          </span>
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

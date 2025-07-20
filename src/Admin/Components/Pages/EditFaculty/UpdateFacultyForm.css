@@ -1,0 +1,42 @@
+.update-form-container {
+  /* border: 2px solid red; */
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.update-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-form input,
+.update-form select,
+.update-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.update-form textarea {
+  resize: vertical;
+}
+
+.update-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.update-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 // import { Link, useLocation } from 'wouter';
 import { Menu, ToggleLeft, X } from "lucide-react";
-import "./NavBar.css";
+import "../../../../Components/Layout/NavBar/NavBar.css";
 import {
   Link,
   Navigate,
@@ -9,13 +9,13 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import logo from "../../../assets/AlqalamLogo.png";
+import logo from "../../../../assets/AlqalamLogo.png";
 
-const NavBar = () => {
+const AdminNavBar = () => {
   let navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  // const [loginToggle, setLoginToggle] = useState(false);
+  const [loginToggle, setLoginToggle] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,23 +27,20 @@ const NavBar = () => {
   }, []);
 
   // admin login
-  const { pathname } = useLocation();
-  console.log(pathname);
-  const isHome = pathname === "/";
-  const isLogin = pathname === "/admin/login";
-
-  console.log(isHome);
 
   let handleAdminLogin = () => {
-    if (isHome) {
-      setTimeout(() => {
-        navigate("/admin/login");
-      }, 300);
-    } else {
-      setTimeout(() => {
-        navigate("/");
-      }, 400);
-    }
+    const newToggleState = !loginToggle;
+    setLoginToggle(newToggleState);
+
+    setTimeout(() => {
+      if (newToggleState) {
+        navigate("/home");
+        console.log("Admin toggle ON");
+      } else {
+        navigate("/admin"); // back to home or user login
+        console.log("Admin toggle OFF");
+      }
+    }, 500);
   };
 
   const toggleMobileMenu = () => {
@@ -65,7 +62,7 @@ const NavBar = () => {
     >
       <div className="header-container">
         <div className="header-content">
-          <Link href="/" className="logo-link">
+          <Link href="/admin" className="logo-link">
             <div className="logo-icon">
               <img src={logo} alt="" className="logo" />
             </div>
@@ -77,26 +74,22 @@ const NavBar = () => {
           <div className="desktop-menu">
             <nav>
               <ul className="nav-list">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/aboutUs">About</NavLink>
-                <NavLink to="/academics">Academics</NavLink>
-                <NavLink to="/faculty">Faculty</NavLink>
-                <NavLink to="/admissions">Admissions</NavLink>
-                <NavLink to="/gallery">Gallery</NavLink>
-                <NavLink to="/activities">Activities</NavLink>
-                <NavLink to="/contactUs">Contact</NavLink>
+                <NavLink to="/admin">Home</NavLink>
+                <NavLink to="/admin/faculty">Faculty</NavLink>
+                <NavLink to="/admin/gallery">Gallery</NavLink>
+                <NavLink to="/admin/testimonial">Testimonial</NavLink>
+                <NavLink to="/admin/editfaculty">Edit Faculty</NavLink>
+                <NavLink to="/admin/editgallery">Edit Gallery</NavLink>
+                <NavLink to="/admin/edittestimonial">Edit Testimonial</NavLink>
               </ul>
             </nav>
-            <Link to="/admissions">
-              <button className="apply-button">Apply Now</button>
-            </Link>
 
-            {/* ------------- toggle admin -------------- */}
+            {/* toggle admin */}
             <div className="toggle-cont" onClick={handleAdminLogin}>
-              <div className={`admintoggle ${isLogin ? "on" : "of"}`}>
+              <div className={`admintoggle ${loginToggle ? "on" : ""}`}>
                 <div className="circle" />
               </div>
-              <p>Admin</p>
+              <p>user</p>
             </div>
           </div>
 
@@ -114,24 +107,20 @@ const NavBar = () => {
       <div className={`mobile-menu ${!mobileMenuOpen ? "hidden" : ""}`}>
         <nav className="mobilenav">
           <ul className="mobile-nav-list">
-            {/* admin login  */}
-            <div
-              className="toggle-cont"
-              onClick={() => {
-                handleAdminLogin();
-                setMobileMenuOpen(false);
-              }}
-            >
-              <div className={`admintoggle ${isLogin ? "on" : "of"}`}>
+            <div className="toggle-cont">
+              <div
+                className={`admintoggle ${loginToggle ? "on" : ""}`}
+                onClick={() => {
+                  handleAdminLogin();
+                }}
+              >
                 <div className="circle" />
               </div>
               <p>Admin</p>
             </div>
-
-            {/*  mobile nav  */}
             <li className="mobile-nav-item">
               <NavLink
-                to="/"
+                to="/admin"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -140,25 +129,7 @@ const NavBar = () => {
             </li>
             <li className="mobile-nav-item">
               <NavLink
-                to="/aboutUs"
-                className="mobile-nav-link"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="mobile-nav-item">
-              <NavLink
-                to="/academics"
-                className="mobile-nav-link"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Academics
-              </NavLink>
-            </li>
-            <li className="mobile-nav-item">
-              <NavLink
-                to="/faculty"
+                to="/admin/faculty"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -167,16 +138,7 @@ const NavBar = () => {
             </li>
             <li className="mobile-nav-item">
               <NavLink
-                to="/admissions"
-                className="mobile-nav-link"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Admissions
-              </NavLink>
-            </li>
-            <li className="mobile-nav-item">
-              <NavLink
-                to="/gallery"
+                to="/admin/gallery"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -185,14 +147,41 @@ const NavBar = () => {
             </li>
             <li className="mobile-nav-item">
               <NavLink
-                to="/contactUs"
+                to="/admin/testimonial"
                 className="mobile-nav-link"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact
+                Testimonial
               </NavLink>
             </li>
             <li className="mobile-nav-item">
+              <NavLink
+                to="/admin/editfaculty"
+                className="mobile-nav-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Edit Faculty
+              </NavLink>
+            </li>
+            <li className="mobile-nav-item">
+              <NavLink
+                to="/admin/edit/gallery"
+                className="mobile-nav-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Edit Gallery
+              </NavLink>
+            </li>
+            <li className="mobile-nav-item">
+              <NavLink
+                to="/admin/edittestimonial"
+                className="mobile-nav-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Edit Testimonial
+              </NavLink>
+            </li>
+            {/* <li className="mobile-nav-item">
               <NavLink
                 to="/activities"
                 className="mobile-nav-link"
@@ -200,8 +189,8 @@ const NavBar = () => {
               >
                 Activities
               </NavLink>
-            </li>
-            <li className="mobile-nav-item">
+            </li> */}
+            {/* <li className="mobile-nav-item">
               <NavLink to="/admissions">
                 <button
                   className="mobile-apply-button"
@@ -210,7 +199,7 @@ const NavBar = () => {
                   Apply Now
                 </button>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
@@ -218,4 +207,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default AdminNavBar;

@@ -1,0 +1,212 @@
+.loginSection {
+  /* border: 2px solid red; */
+  background-color: #c7e1f8;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginCont {
+  /* border: 2px solid black; */
+  height: 60%;
+  width: 50%;
+  display: flex;
+}
+
+.loginLeft {
+  /* border: 2px solid red; */
+  width: 55%;
+  height: 100%;
+  /* background-color: #1f6de9; */
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: end; */
+  flex-direction: column;
+
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-image: url("https://www.shutterstock.com/image-illustration/3d-clipboard-pencil-on-pink-600nw-2107562936.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.leftinner {
+  /* border: 2px solid black; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 50px; */
+}
+
+.alqalamLogo {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin-left: 40px; */
+}
+.alqalamLogo img {
+  width: 5vw;
+}
+.alqalamLogo .logoh1 {
+  font-size: 25px;
+  color: rgb(2, 107, 2);
+}
+
+.leftConttt {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.leftConttt h1 {
+  /* border: 2px solid red; */
+  font-size: 16px;
+  text-align: center;
+  color: rgb(36, 0, 0);
+  margin-top: 19px;
+}
+.leftinner p {
+  /* border: 2px solid red; */
+  font-size: 12px;
+  text-align: center;
+  color: rgb(28, 29, 28);
+
+  padding: 0 13px 0px 13px;
+  letter-spacing: 2px;
+
+  /* font-family: monospace; */
+}
+.loginright {
+  /* border: 2px solid black; */
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.size-6 {
+  /* border: 2px solid red; */
+  height: 90px;
+  width: 90px;
+}
+.form {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  /* width: 20vw; */
+}
+.form input {
+  width: 15vw;
+  height: 5vh;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+.form input:hover {
+  border: 2px solid #1f6de9;
+}
+
+.lbtn {
+  width: 15vw;
+  height: 5vh;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #1f6de9;
+  border: none;
+  color: white;
+}
+.lbtn:hover {
+  background-color: #3e7cde;
+}
+.lforgot {
+  font-size: 12px;
+  margin-top: 50px;
+  color: rgb(54, 54, 54);
+}
+.success-message {
+  font-size: 12px;
+  color: green;
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .loginSection {
+    /* border: 2px solid red; */
+    margin-top: 50px;
+  }
+  .loginCont {
+    /* border: 2px solid red; */
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .loginLeft {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 60%;
+  }
+
+  .leftinner {
+    /* border: 2px solid black; */
+    height: 90%;
+
+    /* gap: 50px; */
+  }
+
+  .alqalamLogo {
+    gap: 10px;
+  }
+  .alqalamLogo img {
+    width: 10vw;
+  }
+
+  .loginright {
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+  }
+
+  .size-6 {
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 150px;
+  }
+
+  .form input {
+    width: 60vw;
+    height: 4vh;
+  }
+
+  .lbtn {
+    width: 60vw;
+    height: 4vh;
+    border-radius: 20px;
+  }
+
+  .lforgot {
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(54, 54, 54);
+    padding-bottom: 5px;
+  }
+}

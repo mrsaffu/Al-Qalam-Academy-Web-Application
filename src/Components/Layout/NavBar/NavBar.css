@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 500;
   transition: all 0.3s ease;
   /* padding: 15px; */
   padding: 0 20px 0 20px;
@@ -108,9 +108,66 @@
   background-color: #e6aa0599;
 }
 
+/* admin toggle  */
+.toggle-cont {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 30px;
+  background-color: green;
+  width: 35vw;
+  margin-left: 80px;
+}
+
+.toggle-cont p {
+  font-size: 15px;
+  color: white;
+}
+
+.admintoggle {
+  width: 35px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.admintoggle .circle {
+  width: 12px;
+  height: 12px;
+  background-color: #ffb400;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.admintoggle.on .circle {
+  /* left: 16px; */
+  transform: translateX(12px);
+  background-color: red;
+}
+
+.admintoggle.of .circle {
+  /* right: 16px; */
+  transform: translateX(0);
+  background-color: #ffb400;
+}
+.admintoggle:active .circle {
+  transform: scale(1.95);
+}
+
 /* ----------------------- Mobile Menu ----------------------- */
+.mobilenav {
+  /* border: 5px solid red; */
+}
 .menu-toggle {
-  /* border: 2px solid red; */
+  /* border: 20px solid red; */
   background: none;
   border: none;
   color: white;
@@ -121,7 +178,7 @@
 .mobile-menu {
   /* border: 2px solid red; */
   background-color: white;
-  padding:  1rem 1rem;
+  padding: 1rem 1rem;
   margin: 1rem 1rem 1rem 0;
   transition: all 0.3s ease;
   border-radius: 5px;
@@ -140,6 +197,7 @@
 }
 
 .mobile-nav-item {
+  /* border: 2px solid red; */
   margin: 0.75rem 0;
 }
 
@@ -173,6 +231,32 @@
 }
 
 @media (min-width: 768px) {
+  /* admin toggle  */
+  .toggle-cont {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    background-color: green;
+    width: 8vw;
+    margin-left: 0px;
+  }
+
+  .admintoggle {
+    /* border: 2px solid red; */
+    width: 35px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /* ------ */
   .header-container {
     width: 90%;
     max-width: 1510px;

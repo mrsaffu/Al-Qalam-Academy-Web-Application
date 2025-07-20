@@ -1,0 +1,39 @@
+.buttonSec {
+  border: 2px solid rgb(80, 79, 79);
+  width: 6vw;
+  height: 5vh;
+  border-radius: 6px;
+}
+.buttonSec:hover {
+  border: none;
+  color: white;
+  background-color: #1773ed;
+}
+.addClass {
+  border: none;
+  background-color: #1773ed;
+  color: white;
+}
+.addClass:hover {
+  background-color: #488fea;
+}
+.deleteBtn {
+  /* border: 2px solid red; */
+  color: white;
+  background-color: red;
+  border: none;
+}
+.deleteBtn:hover {
+  background-color: rgb(244, 93, 93);
+  border: none;
+}
+.view{
+   color: white;
+  background-color: green;
+  border: none;
+
+}
+.view:hover{
+  background-color: rgb(10, 198, 10);
+
+}

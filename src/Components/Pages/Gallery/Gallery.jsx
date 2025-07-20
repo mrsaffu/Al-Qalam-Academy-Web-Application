@@ -128,12 +128,12 @@ const Gallery = () => {
                         {isSectionExpanded(section.id) ? (
                           <>
                             <span>Show Less</span>
-                            <ChevronUp size={18} />
+                            <ChevronUp size={16} />
                           </>
                         ) : (
                           <>
                             <span>View More Images</span>
-                            <ChevronDown size={18} />
+                            <ChevronDown size={16} />
                           </>
                         )}
                       </button>
