@@ -2,7 +2,7 @@
 
 A comprehensive website for Al Qalam Academy, a CBSE-affiliated educational institution that combines academic excellence with Islamic values.
 
-🔗 **Live Website:** [Al Qalam Academy Website](https://mrsaffu.github.io/Al-Qalam-Academy-Web-Application/)
+🔗 **Live Website:** [Al Qalam Academy Website](https://al-qalam-academy.vercel.app/)
 
 ## Features
 
